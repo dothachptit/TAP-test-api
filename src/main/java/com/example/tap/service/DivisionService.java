@@ -14,5 +14,4 @@ public interface DivisionService {
 
     void addSubjectToDivision(DivisionSubjectRequest divisionSubjectRequest);
 
-    Boolean deleteById(Integer id);
 }
