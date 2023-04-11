@@ -45,7 +45,7 @@ public class SwaggerConfig implements WebMvcConfigurer {
                 "Some custom description of API.",
                 "1.0",
                 "Terms of service",
-                new Contact("None", "None", "None"),
+                new Contact("THACHDC", "None", "do.thach@tap-ic.co.jp"),
                 "License of API",
                 "API license URL",
                 Collections.emptyList());

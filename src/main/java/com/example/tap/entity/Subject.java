@@ -3,6 +3,7 @@ package com.example.tap.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import java.util.List;
@@ -21,6 +22,6 @@ public class Subject {
     @Column(name = "name", length = 55)
     private String name;
 
-    @OneToMany(mappedBy = "subjectid")
+    @OneToMany(mappedBy = "subjectid",cascade = CascadeType.ALL)
     private List<DivisionSubject> divisionSubjects;
 }

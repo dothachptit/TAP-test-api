@@ -21,5 +21,8 @@ public class SubjectController {
     public ResponseEntity<?> getAllSubject(){
         return ResponseEntity.ok(subjectService.getAllSubject());
     }
-
+    @DeleteMapping("/delete-by-id/{id}")
+    public ResponseEntity<?> deleteSubjectById(@PathVariable Integer id){
+        return ResponseEntity.ok(subjectService.deleteById(id));
+    }
 }

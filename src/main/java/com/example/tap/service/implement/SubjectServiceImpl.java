@@ -39,4 +39,12 @@ public class SubjectServiceImpl implements SubjectService {
                 .collect(Collectors.toList());
     }
 
+    @Override
+    public Boolean deleteById(Integer id) {
+        if(subjectRepo.findById(id).isPresent()){
+            throw new BadRequestException(ErrorMessage.SUBJECT_IS_NOT_PRESENT);
+        }
+        subjectRepo.deleteById(id);
+        return true;
+    }
 }

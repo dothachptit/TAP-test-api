@@ -74,4 +74,12 @@ public class DivisionServiceImpl implements DivisionService {
         divisionSubjectRepo.save(divisionSubject);
     }
 
+    @Override
+    public Boolean deleteById(Integer id) {
+        if(!divisionRepo.findById(id).isPresent()){
+            throw new BadRequestException(ErrorMessage.DIVISION_IS_NOT_PRESENT);
+        }
+        divisionRepo.deleteById(id);
+        return true;
+    }
 }

@@ -10,5 +10,5 @@ public interface SubjectService {
 
     List<SubjectResponse> getAllSubject();
 
-
+    Boolean deleteById(Integer id);
 }

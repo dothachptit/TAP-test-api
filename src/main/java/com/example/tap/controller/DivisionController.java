@@ -29,5 +29,8 @@ public class DivisionController {
         divisionService.addSubjectToDivision(divisionSubjectRequest);
         return ResponseEntity.ok("Created");
     }
-
+    @DeleteMapping("/delete-by-id/{id}")
+    public ResponseEntity<?> deleteById(@PathVariable Integer id){
+        return ResponseEntity.ok(divisionService.deleteById(id));
+    }
 }

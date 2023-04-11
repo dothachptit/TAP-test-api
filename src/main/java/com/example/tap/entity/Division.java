@@ -27,6 +27,6 @@ public class Division {
     @Column(name = "acronym", length = 5)
     private String acronym;
 
-    @OneToMany(mappedBy = "divisionid")
+    @OneToMany(mappedBy = "divisionid",cascade = CascadeType.ALL)
     List<DivisionSubject> subjects;
 }
