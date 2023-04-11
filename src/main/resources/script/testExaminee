@@ -1,0 +1,25 @@
+{
+  "acronymOfDivision": "s",
+  "examineeSubjectDtos": [
+    {
+      "score": 70,
+      "subjectId": 1
+    },
+{
+      "score": 78,
+      "subjectId": 2
+    },
+{
+      "score": 82,
+      "subjectId": 3
+    },
+{
+      "score": 57,
+      "subjectId": 4
+    },
+{
+      "score": 74,
+      "subjectId": 5
+    }
+  ]
+}
